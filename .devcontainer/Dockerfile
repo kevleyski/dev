@@ -13,7 +13,7 @@ RUN set -x \
                                             libdrm-dev valgrind libpciaccess-dev libxslt1-dev geoip-bin libgeoip-dev zlib1g-dev libpcre3 libpcre3-dev \
                                             libbz2-dev ca-certificates libssl-dev nasm v4l-utils libv4l-dev gtk2.0
 
-COPY . kevs
+COPY . /kevs
 
 FROM kevs_baseline_zbar AS kevs_baseline_opencv
 
